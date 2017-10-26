@@ -16,6 +16,9 @@
       <button ion-button secondary menuToggle (click)="takePicture() ">Take a Picture</button>
 
       <img [src]="base64Image" *ngIf="base64Image" />
+
+      <button ion-button secondary menuToggle (click)="savePicture() ">Save the picture</button>
+
     </ion-card-content>
   </ion-card>
 </ion-content>
