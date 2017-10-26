@@ -22,6 +22,7 @@ export class CameraPage {
     }).then((imageData) => {
       // imageData is a base64 encoded string
       this.base64Image = "data:image/jpeg;base64," + imageData;
+
     }, (err) => {
       console.log(err);
     });
@@ -31,7 +32,7 @@ export class CameraPage {
 
 
   savePicture() {
-    this.base64ToGallery.base64ToGallery( this.base64Image, {prefix: '_img'}).then(
+    this.base64ToGallery.base64ToGallery( this.base64Image.replace('data:image/jpeg;base64,', ''), {prefix: '_img'}).then(
       res => console.log('Saved image to gallery ', res),
       err => console.log('Error saving image to gallery ', err)
     );
