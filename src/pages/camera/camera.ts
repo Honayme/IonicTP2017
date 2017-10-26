@@ -11,7 +11,7 @@ export class CameraPage {
 
   constructor(private camera : Camera) {
   }
-  
+
   takePicture() {
     this.camera.getPicture({
       destinationType: this.camera.DestinationType.DATA_URL,
