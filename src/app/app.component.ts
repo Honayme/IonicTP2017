@@ -10,6 +10,7 @@ import { CameraPage } from '../pages/camera/camera';
 @Component({
   templateUrl: 'app.html'
 })
+
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
@@ -24,7 +25,7 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: HomePage },
       { title: 'List', component: ListPage },
-      { title: 'Camera', component: CameraPage }
+      { title: 'Camera', component: CameraPage } //Ajout de la page
     ];
 
   }

@@ -13,15 +13,17 @@
     <ion-card-content>
       Hello World, this is my camera app
 
+      <!--Au clique sur le bouton on déclenchement de la méthode takePicture()-->
       <button ion-button (click)="takePicture() ">Take a Picture</button>
 
-      <!--//Si on a une image "base64Image" en base64 on l'affiche-->
+      <!--Si on a une image "base64Image" en base64 on l'affiche-->
       <img [src]="base64Image" *ngIf="base64Image" />
 
-      <!--//Si on a une image "base64Image" au clique sur le bouton on appel la méthide savePicture()-->
+      <!--Si on a une image "base64Image" au clique sur le bouton on appel la méthide savePicture()-->
       <button *ngIf="base64Image" ion-button (click)="savePicture() ">Save the picture</button>
 
       <p *ngIf="message">{{message}}</p>
+      <!--Ajouter spinner dialog pour le temps de chargement -->
 
     </ion-card-content>
   </ion-card>
