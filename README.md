@@ -28,8 +28,11 @@ Substitute ios for android if not on a Mac.
 
 
 >git push ionic master
-  
+>ionic link --pro-id 5d8ac54c 
+
   Push sur le dashboard ionic pour utiliser Ionic View
+  
+
   
 >ionic serve --l 
 
@@ -38,3 +41,5 @@ Substitute ios for android if not on a Mac.
 >ionic info 
 
   Obtenir version de ionic + packages 
+  
+  
