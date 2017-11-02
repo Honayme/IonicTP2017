@@ -21,11 +21,7 @@
 
       <button ion-button (click)="takeVideo() ">Take a Video</button>
 
-      <!--Si on a une image "base64Image" on l'affiche-->
-      <!--<img [src]="base64Image" *ngIf="base64Image" />-->
-
-      <!--Si on a une image "base64Image" au clique sur le bouton on appel la méthode savePicture()-->
-      <!--<button *ngIf="base64Image" ion-button (click)="savePicture() ">Save the picture</button>-->
+      <video *ngIf="path" src="{{path}}" controls="controls" autoplay></video>
 
       <p *ngIf="message">{{message}}</p>
       <!--Ajouter spinner dialog pour le temps de chargement -->
