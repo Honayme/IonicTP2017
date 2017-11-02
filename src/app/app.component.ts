@@ -17,17 +17,17 @@ export class MyApp {
 
   rootPage: any = HomePage;
 
-  pages: Array<{title: string, component: any}>;
+  pages: Array<{title: string, component: any, icon: string}>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: HomePage },
+      { title: 'Home', component: HomePage},
       { title: 'List', component: ListPage },
-      { title: 'Camera', component: CameraPage }, //Ajout de la page
-      { title: 'Video', component: VideoPage } //Ajout de la page
+      { title: 'Photo', component: CameraPage, icon : "<ion-icon name=\"camera\"></ion-icon>" }, //Ajout de la page
+      { title: 'Video', component: VideoPage, icon : "<ion-icon name=\"videocam\"></ion-icon>"} //Ajout de la page
     ];
 
   }

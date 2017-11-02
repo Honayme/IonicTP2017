@@ -11,7 +11,7 @@ import { LocalNotifications } from "@ionic-native/local-notifications";
   imports: [
     IonicPageModule.forChild(VideoPage),
   ],
-  providers: [ // module media capture
+  providers: [ // Ajout des provider pour la capture de la vidéo et des notif
     MediaCapture,
     LocalNotifications
   ]
