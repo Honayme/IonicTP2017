@@ -3,8 +3,8 @@ import { Component } from '@angular/core';
 import { Base64ToGallery } from '@ionic-native/base64-to-gallery';
 
 @Component({
-  selector: 'page-camera',
-  templateUrl: 'camera.html'
+  selector: 'page-camera', //Dans la dossier page camera
+  templateUrl: 'camera.html' //Fichier camera.html
 })
 
 
@@ -12,10 +12,11 @@ export class CameraPage {
   public base64Image: string;
   public message : string ;
 
-
+//Constructeur
   constructor(private camera: Camera, private base64ToGallery: Base64ToGallery) {
   }
 
+  //Méthode pour prendre une image
   takePicture() {
     this.camera.getPicture({
       destinationType: this.camera.DestinationType.DATA_URL,
@@ -31,12 +32,12 @@ export class CameraPage {
 
   }
 
-
+  //Méthode pour sauvegarder l'image dans le téléphone
   savePicture() {
     this.message = 'En cours de sauvegarde';
     this.base64ToGallery.base64ToGallery(this.base64Image.replace('data:image/jpeg;base64,', ''), {prefix: '_img'}).then(
-      res => this.message = `Enregistre ${res}`,
-      err => this.message = `Erreur  ${err}`,
+      res => this.message = `Image enregistré dans: ${res}`,
+      err => this.message = `Erreur lors de l'enregistrement:  ${err}`,
     );
   }
 
