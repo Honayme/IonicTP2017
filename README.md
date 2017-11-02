@@ -25,3 +25,16 @@ $ ionic cordova run ios
 Substitute ios for android if not on a Mac.
 
 >@Author Thomas Mirabile
+
+
+>git push ionic master
+  
+  Push sur le dashboard ionic pour utiliser Ionic View
+  
+>ionic serve --l 
+
+  Lancer ionic sur le localhost
+  
+>ionic info 
+
+  Obtenir version de ionic + packages 
