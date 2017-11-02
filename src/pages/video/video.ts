@@ -26,13 +26,16 @@ export class VideoPage {
   public options: CaptureVideoOptions = {};
 
   takeVideo() {
-    this.mediaCapture.captureVideo(options)
+    this.mediaCapture.captureVideo(this.options)
       .then(
         (data: MediaFile[]) => console.log(data),
         (err: CaptureError) => console.error(err)
       ), (err) => {
       console.log(err);
+      this.message = "camera";
+
     }
+
 
   }
 
