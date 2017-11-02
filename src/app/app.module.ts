@@ -11,6 +11,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { Camera } from '@ionic-native/camera';
 import { Base64ToGallery } from '@ionic-native/base64-to-gallery';
+import {VideoPageModule} from "../pages/video/video.module";
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { Base64ToGallery } from '@ionic-native/base64-to-gallery';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    VideoPageModule // import du video.module.ts
   ],
   bootstrap: [IonicApp],
   entryComponents: [

@@ -32,6 +32,7 @@ export class CameraPage {
 
   }
 
+
   //Méthode pour sauvegarder l'image dans le téléphone
   savePicture() {
     this.message = 'En cours de sauvegarde';
