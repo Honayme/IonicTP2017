@@ -26,8 +26,8 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: HomePage},
       { title: 'List', component: ListPage },
-      { title: 'Photo', component: CameraPage, icon : "<ion-icon name=\"camera\"></ion-icon>" }, //Ajout de la page
-      { title: 'Video', component: VideoPage, icon : "<ion-icon name=\"videocam\"></ion-icon>"} //Ajout de la page
+      { title: 'Photo', component: CameraPage},
+      { title: 'Video', component: VideoPage}
     ];
 
   }
